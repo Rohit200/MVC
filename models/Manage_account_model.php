@@ -10,5 +10,6 @@ class Manage_account_model extends CI_Model {
         return $res;
     
      }
+     
     }
 ?>

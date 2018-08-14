@@ -2,12 +2,12 @@
 if (!defined('BASEPATH')) exit('No direct script access allowed');
 class Login_and_registeration extends CI_Model
 {
-    public function get_users(){
-
-        $data = array();
-        $query = $this->db->get('detail');
-        $res   = $query->result();        
-        return $res;
-    }
+    public function get_users($username,$password)
+{
+    $q = $this->db->select('password')->from('detail')->where('username',$username)->get();
+    $res=$q->result();
+    return $res;
+    
+}
 }
 ?>

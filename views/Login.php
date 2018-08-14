@@ -17,8 +17,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         debugger;
        $.ajax({
         type : 'post',
-        url : 'check.php',
-        data:{username : username, password : password  },
+        url : 'http://localhost/codeigniter/index.php/Main',
+        data:{username : username, password : password, action : 'index'},
         success: function (response) {
             debugger;
        alert(response);

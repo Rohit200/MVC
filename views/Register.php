@@ -16,8 +16,8 @@ function registeration()
     debugger;
     $.ajax({
         type :'post',
-        url :'Login_and_registeration.php',
-        data :{username : username, password :password, password1 : password1,action :'create'},
+        url :'http://localhost/codeigniter/index.php/Main',
+        data :{username : username, password :password, password1 : password1,action :'index'},
         success:function(response)
         {
             debugger;
