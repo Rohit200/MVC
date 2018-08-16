@@ -17,16 +17,17 @@ function registeration()
     $.ajax({
         type :'post',
         url :'http://localhost/codeigniter/index.php/Main',
-        data :{username : username, password :password, password1 : password1,action :'index'},
+        data :{username : username, password :password, password1 : password1,n : '1',action :'index'},
         success:function(response)
         {
             debugger;
             alert(response);
         },
-        error: function(xhr,status,error)
-        {
-            alert("something wrong");
-        }
+        alert("data added successfully");
+        //error: function(xhr,status,error)
+        //{
+           // alert("something wrong");
+        //}
     });
 }
 </script>

@@ -1,3 +1,3 @@
 <?php
-echo "this is test page \n";
+echo "Hi, Welcome in bridgelabz\n";
 ?>

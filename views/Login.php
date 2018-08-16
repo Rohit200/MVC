@@ -18,7 +18,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
        $.ajax({
         type : 'post',
         url : 'http://localhost/codeigniter/index.php/Main',
-        data:{username : username, password : password, action : 'index'},
+        data:{username : username, password : password,n :'2', action : 'index'},
         success: function (response) {
             debugger;
        alert(response);
